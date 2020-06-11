@@ -1,0 +1,252 @@
+body {
+  margin: 0;
+  background-color: #ffb1b1;
+  font-family: "Muli", sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__brand {
+  display: flex;
+  justify-items: flex-start;
+  align-items: center;
+  color: #ff3737;
+}
+
+/*img es un hijo*/
+.header__img {
+  width: 80px;
+  margin-top: 15px;
+  margin-left: 30px;
+  margin-right: 10px;
+}
+
+.header__title--blove {
+  margin-top: 15px;
+  padding-top: 20px;
+  font-weight: 400;
+}
+
+.header__title--donation {
+  margin-top: 15px;
+  padding-top: 20px;
+  font-weight: 900;
+}
+
+.header__menu {
+  margin-right: 30px;
+  margin-top: 15px;
+}
+
+.header__menu ul {
+  display: none;
+  list-style: none;
+  padding: 0px;
+  position: absolute;
+  width: 100px;
+  text-align: right;
+  margin: 0px 0px 0px -14px;
+}
+
+.header__menu:hover ul,
+ul:hover {
+  display: block;
+}
+
+.header__menu li {
+  margin: 10px 0px;
+}
+
+.header__menu li a {
+  color: #9a1f40;
+  text-decoration: none;
+}
+
+.header__menu li a:hover {
+  text-decoration: underline;
+}
+
+.header__menu--profile {
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header__menu--profile img {
+  width: 35px;
+  margin-right: 8px;
+}
+
+.header__menu--profile p {
+  margin: 0px;
+  color: white;
+}
+
+.main {
+  width: 100%;
+  height: 400px;
+  margin-top: 15px;
+}
+
+.main__search {
+  height: 100%;
+  background-image: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 1)
+    ),
+    url("https://www.valeriaroman.com.ar/wp-content/uploads/2015/11/LoveBloodBags.jpg");
+  background-size: cover;
+  background-position-y: bottom 26%;
+  font-family: "Lato", sans-serif;
+}
+
+.main__search__title {
+  margin: 0px 0px 0px 56%;
+  padding-top: 20px;
+  color: #0e9aa7;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.main__search__subtitle {
+  color: #ff3737;
+  margin: 8px 0px 0px 21.4%;
+  font-size: 33px;
+  font-weight: 700;
+}
+
+.main__search__question {
+  color: #0e9aa7;
+  margin: 10px 0px 0px 21%;
+  padding-top: 50px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.input {
+  margin-left: 13.6%;
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 50px;
+  border: 2px solid #0e9aa7;
+  border-radius: 28px;
+  color: #9a1f40;
+  font-family: "Muli", sans-serif;
+  font-size: 16px;
+  padding: 0px 20px;
+  width: 30%;
+  outline: none;
+}
+
+::placeholder {
+  color: #0e9aa7;
+}
+
+.carousel {
+  width: 100%;
+  height: 430px;
+  overflow: scroll;
+  padding-left: 30px;
+  box-sizing: border-box;
+  position: relative;
+  margin: 45px 0px 0px;
+}
+
+.carousel__container {
+  white-space: nowrap;
+  /* margin: 40px 0px; */
+  padding-bottom: 10px;
+}
+
+.carousel-title {
+  color: white;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+.carousel-item {
+  width: 250px;
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-right: 10px;
+  display: inline-block;
+  cursor: pointer;
+  transition: 450ms all;
+  transform-origin: center left;
+  position: relative;
+}
+
+.carousel-item__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-item:hover ~ .carousel-item {
+  transform: translate3d(100px, 0, 0);
+}
+
+.carousel__container:hover .carousel-item {
+  opacity: 0.3;
+}
+
+.carousel__container:hover .carousel-item:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.carousel-item__details {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  font-size: 11px;
+  opacity: 0;
+  transition: 450ms opacity;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: white;
+}
+
+.carousel-item__details:hover {
+  opacity: 2;
+}
+
+.details-more {
+  width: 20px;
+  position: absolute;
+  bottom: 60px;
+}
+
+.carousel-item__details--title {
+  position: absolute;
+  bottom: 25px;
+}
+
+.carousel-item__details--subtitle {
+  position: absolute;
+  bottom: 5px;
+}
+
+footer {
+  height: 30px;
+  padding-top: 10px;
+  color: #ff3737;
+  background-color: white;
+  text-align: center;
+}
