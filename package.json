@@ -1,0 +1,25 @@
+{
+  "name": "blove-donation-search",
+  "version": "1.0.0",
+  "description": "Blove Donation website to search for people and donate blood by blood type. - Live example: https://anisantillans.github.io/blove-donation-search/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anisantillans/blove-donation-search.git"
+  },
+  "author": "Ana Paula Santillan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anisantillans/blove-donation-search/issues"
+  },
+  "homepage": "https://github.com/anisantillans/blove-donation-search#readme",
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@storybook/html": "^5.3.19",
+    "babel-loader": "^8.1.0"
+  }
+}
