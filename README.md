@@ -6,6 +6,6 @@ Blove Donation website to search for people and donate blood by blood type.
 
 ![](https://raw.githubusercontent.com/anisantillans/blove-donation-search/gh-pages/img/blove-donation4.png)
 
-![](https://raw.githubusercontent.com/anisantillans/blove-donation-search/gh-pages/img/blove-donation.png)
+![](https://raw.githubusercontent.com/anisantillans/blove-donation-search/gh-pages/img/blove-donation1.png)
 
 
